@@ -1,9 +1,15 @@
-<md-whiteframe class="md-whiteframe-z5" >
-  <h2>{{title}}</h2>
-  <div>{{content}}</div>
-  <div class="buttons" layout="row" layout-align="space-between">
-    <md-button aria-label="Annuler">{{annuler}}</md-button>
-    <md-button aria-label="Continuer">{{continuer}}</md-button>
-    <md-button aria-label="Valider">{{ok}}</md-button>
+<md-whiteframe layout="column" class="md-whiteframe-z5" ng-style="{height:'300px',width:'300px',position:'fixed',left:'50%',top:'50%','margin-left':'-150px','margin-top':'-150px'}">
+  <md-toolbar>
+  <div class="md-toolbar-tools" >
+    <h2>{{title}}</h2>
+  </div>
+  </md-toolbar>
+  <div layout-padding>{{content}}</div>
+  <span flex></span>
+  <md-divider ng-style="{'background-color':'blue'}"></md-divider>
+  <div class="buttons" flex="20" layout="row" layout-align="space-between">
+    <md-button flex="33" aria-label="Annuler">Annuler</md-button>
+    <div flex style="border-left:solid 1px blue;border-right:solid 1px blue;"></div>
+    <md-button flex="33" aria-label="Valider">Compris!</md-button>
   </div>
 </md-whiteframe>
