@@ -4,12 +4,14 @@
     <h2>{{title}}</h2>
   </div>
   </md-toolbar>
-  <div layout-padding>{{content}}</div>
+  <div ng-style="{overflow:'hidden'}" layout-padding ng-transclude></div>
   <span flex></span>
   <md-divider ng-style="{'background-color':'blue'}"></md-divider>
-  <div class="buttons" flex="20" layout="row" layout-align="space-between">
-    <md-button flex="33" aria-label="Annuler">Annuler</md-button>
-    <div flex style="border-left:solid 1px blue;border-right:solid 1px blue;"></div>
-    <md-button flex="33" aria-label="Valider">Compris!</md-button>
-  </div>
+  <md-list ng-style="{'padding-top':'0px','padding-bottom':'0px'}" flex="20" layout="row" layout-align="space-between">
+    <md-list-item flex="33"  ng-style="{'border-right':'solid 1px blue'}" ng-show="reessayer||confirmer" layout-align="center center" layout="column" aria-label="Annuler" ng-click="cancel()">Annuler</md-list-item>
+    <md-list-item flex ></md-list-item>
+    <md-list-item flex="33" ng-style="{'border-left':'solid 1px blue'}" ng-show="confirmer" layout-align="center center" layout="column" aria-label="Valider" ng-click="confirm()">Continuer!</md-list-item>
+    <md-list-item flex="33"  ng-style="{'border-left':'solid 1px blue'}" ng-show="reessayer" layout-align="center center" layout="column" aria-label="Valider" ng-click="retry()">Re&eacute;ssayer!</md-list-item>
+    <md-list-item flex="33" ng-style="{'border-left':'solid 1px blue'}" ng-show="alerter" layout-align="center center" layout="column" aria-label="Valider" ng-click="ok()">Compris!</md-list-item>
+  </md-list>
 </md-whiteframe>

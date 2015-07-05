@@ -5,15 +5,18 @@ angular.module('box',['ngMaterial'])
   return {
     restrict:'E',
     templateUrl:'template.html',
+    transclude:true,
     replace:true,
-    require:'ngModel',
     scope:{
       title:'@',
-      type:'@',
+      role:'@',
       name:'@'
     },
-    controller:function($scope,$element){
-      $scope.content="Le contenu de ma super aler te ira ici....";
+    controller:function($scope){
+      if($scope.role==='alerter'){$scope.alerter=1;}
+      else if($scope.role==='confirmer'){$scope.confirmer=1;}
+      else if($scope.role==='reessayer'){$scope.reessayer=1;}
+      else{$scope.alerter=1;}
     }
   };
 });
