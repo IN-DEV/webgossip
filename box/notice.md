@@ -15,4 +15,4 @@ comme vous le voyez, la box a deux attributs: **title** et **role**
 * ***reessayer***: Ce role creait une boite pour demander si **Re&eacute;ssayer** ou **Annuler**  
 ![boite en mode reessayer](/box/snapshots/santitre_reessayer.png?raw=true "role=reessayer et pas de titre")  
 Voila je crois avoir toout dit bien sure le contenu de la boite est celui de la balise `<kaj-box />`.  
-... et voila :ok_hand: .
+... et c'est tout pour le moment! :ok_hand: .
