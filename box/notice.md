@@ -6,8 +6,8 @@ pour utiliser la box, il faut simplement appeler la balise &lt;kaj-box /&gt; com
 &lt;kaj-box title="foo" role="bar" &gt;Contenu de la box&lt;/kaj-box&gt;
 ####explications
 comme vous le voyez, la box a deux attributs: **title** et **role**
-***title***:Titre de la boite de dialogue que vous voulez afficher si vous ommettez cet attribut le titre de la boite sera **Gossip...**
-***role***:le type de boite de dialogue que vous voulez creer; les roles sont pour le moment
+1. ***title***:Titre de la boite de dialogue que vous voulez afficher si vous ommettez cet attribut le titre de la boite sera **Gossip...**
+2. ***role***:le type de boite de dialogue que vous voulez creer; les roles sont pour le moment
 * *alert*: Affiche une boite d'alerte; C'est l'option par defaut(si vous ne precisez pas l'attribut *role* il sera automatiquement a **alert**) apercu d'une alerte:
 ![boite d'alerte](/snapshots/titre_et_role_forget.png?raw=true "role=alerter")
 * *confirmer*: Ce role creait une boite de confirmation avec les boutons *Annuler* et *Continuer*
