@@ -10,9 +10,9 @@ angular.module('box',['ngMaterial'])
     scope:{
       title:'@',
       role:'@',
-      name:'@'
     },
     controller:function($scope){
+      $scope.title='Gossip...';	    
       if($scope.role==='alerter'){$scope.alerter=1;}
       else if($scope.role==='confirmer'){$scope.confirmer=1;}
       else if($scope.role==='reessayer'){$scope.reessayer=1;}
