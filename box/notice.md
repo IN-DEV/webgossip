@@ -3,7 +3,7 @@
 Ce composant depend de angularjs et de angular-material
 ##Utilisation
 pour utiliser la box, il faut simplement appeler la balise &lt;kaj-box /&gt; comme suit:  
-&lt;kaj-box title="foo" role="bar" &gt;Contenu de la box&lt;/kaj-box&gt;
+`<kaj-box title="foo" role="bar" >Contenu de la box</kaj-box>`
 ####Explications
 comme vous le voyez, la box a deux attributs: **title** et **role**  
 1. ***title***:Titre de la boite de dialogue que vous voulez afficher si vous ommettez cet attribut le titre de la boite sera **Gossip...**  
